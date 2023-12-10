@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "103044558947",
+    "project_id": "tp2laboiv2c",
+    "storage_bucket": "tp2laboiv2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103044558947:android:1bbb5a5729e81b8e820856",
+        "android_client_info": {
+          "package_name": "io.ionic7.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD-kOP52FW0XxgF3hDn8bJ-7yMtR-vmR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

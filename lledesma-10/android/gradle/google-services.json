@@ -1,0 +1,220 @@
+{
+  "project_info": {
+    "project_number": "240194263455",
+    "firebase_url": "https://pps-2c2023-default-rtdb.firebaseio.com",
+    "project_id": "pps-2c2023",
+    "storage_bucket": "pps-2c2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:227a3ba74fb089483945aa",
+        "android_client_info": {
+          "package_name": "com.lledesma.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:2ebf6e39dc166fcb3945aa",
+        "android_client_info": {
+          "package_name": "io.ionic1.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:f1f9c7bf4e54e9aa3945aa",
+        "android_client_info": {
+          "package_name": "io.ionic10.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:61a8e0567b70b1603945aa",
+        "android_client_info": {
+          "package_name": "io.ionic2.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:9ad4ff6218eba3803945aa",
+        "android_client_info": {
+          "package_name": "io.ionic3.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:c6213dbd9c7b5c003945aa",
+        "android_client_info": {
+          "package_name": "io.ionic4.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:67099b750621c0c33945aa",
+        "android_client_info": {
+          "package_name": "io.ionic5.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:bfc122fc77511c403945aa",
+        "android_client_info": {
+          "package_name": "io.ionic6.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:11e7bda9f7ef559a3945aa",
+        "android_client_info": {
+          "package_name": "io.ionic7.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:e6eef7f5f99260753945aa",
+        "android_client_info": {
+          "package_name": "io.ionic8.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240194263455:android:e6169433b43eca4e3945aa",
+        "android_client_info": {
+          "package_name": "io.ionic9.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6_iO8gOFPdekClfg4av5tuHW16FWYZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

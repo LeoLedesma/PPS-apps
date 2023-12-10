@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Control de Gastos Mensuales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">  
+    <!-- Sección superior con ingreso mensual, umbral de gasto y botones para abrir modal -->
+    <div class="top-section p-2" style="background: var(--ion-color-success);">
+      <div class="row">
+      <div class="col-6 ion-text-center d-flex flex-column mb-2 mt-2" >   
+        <ion-label class="ion-text-uppercase">Ingreso Mensual</ion-label>
+        <ion-text  class="ion-text-nowrap">{{ this.gastos.ingresos| currency:'$':'symbol':'1.2-2' }}</ion-text>
+        <ion-button color="primary" size="small" (click)="abrirModal('Ingreso Mensual')">Editar</ion-button>
+      </div>
+
+      <div class="col-6 ion-text-center d-flex flex-column mb-2 mt-2"> 
+        <ion-label class="ion-text-uppercase">Umbral de Gasto</ion-label>       
+        <ion-text label="Umbral de Gasto" class="ion-text-nowrap">{{ this.gastos.margen }}%</ion-text>
+        <ion-button color="primary" size="small" (click)="abrirModal('Umbral de Gasto (%)')">Editar</ion-button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex mb-2 justify-content-center">
+      <ion-label class="text-uppercase" style="font-weight: 800;font-size: 1.2em;" [style]="getDanger() ? 'color:var(--ion-color-danger)' : ''">Total gastos: </ion-label>       
+      <ion-label label="Umbral de Gasto" style="font-weight: 800;font-size: 1.2em;" class="ion-text-nowrap" [style]="getDanger() ? 'color:var(--ion-color-danger)' : ''">{{' '}} {{gastosUltimoMes| currency:'$':'symbol':'1.2-2' }}</ion-label>
+    </div>
+    </div>
+    </div>
+    <ion-card color="primary" *ngIf="modalAbierto" class="p-2">
+      <ion-card-header>
+        <ion-card-title>{{modalTitulo}}</ion-card-title>        
+      </ion-card-header>
+      <ion-item color="primary">        
+        <ion-input type="number" [(ngModel)]="nuevoMonto" color="primary"></ion-input>
+      </ion-item>
+      <ion-button style="width: 100%;" color="success" (click)="guardarNuevoMonto()" >Guardar</ion-button>
+    </ion-card>
+
+    <div class="row" *ngIf="!gastoOpen">
+      <div class="col ion-text-center">
+        <ion-button expand="full" color="warning" (click)="abrirNuevoGasto()" style="font-size: 1.2em;">Agregar Gasto</ion-button>
+      </div>
+    </div>
+    <ion-card color="primary" *ngIf="gastoOpen" class="p-2">
+      <ion-fab vertical="top" horizontal="end" (click)="abrirNuevoGasto()">
+        <ion-fab-button color="danger"  size="small">
+          <ion-icon name="close"></ion-icon>
+        </ion-fab-button>        
+      </ion-fab>
+      <ion-card-header>
+        <ion-card-title>Agregar gasto</ion-card-title>
+      </ion-card-header>
+      <ion-item color="primary" class="">          
+        <ion-select label="Categoría" [(ngModel)]="selectedCategoria" color="dark">
+          <ion-select-option value="alimentos">Alimentos</ion-select-option>
+          <ion-select-option value="medicina">Medicina</ion-select-option>
+          <ion-select-option value="servicios">Servicios</ion-select-option>
+          <ion-select-option value="impuestos">Impuestos</ion-select-option>
+          <!-- Agrega más opciones según sea necesario -->
+        </ion-select>
+      </ion-item>
+      <ion-input color="primary" label="Monto:" type="number" [(ngModel)]="gasto" style="font-size: 1.2em;"></ion-input>
+      <ion-button expand="full" color="warning" (click)="guardarGasto()" style="font-size: 1.2em;">Guardar Gasto</ion-button>
+    </ion-card>
+
+    <ion-card color="primary" style="max-height: 50%; overflow: scroll;">
+      <ion-card-header>
+        <ion-card-title>Gastos</ion-card-title>        
+      </ion-card-header>
+      <ion-card-content >
+        <ion-list >
+          <ion-item *ngFor="let gasto of gastos.movimientos">            
+            <ion-label slot="start" class="overflow-visible">{{gasto.fecha.toDate().toLocaleDateString()}} - {{gasto.categoria | titlecase}} </ion-label>
+            <ion-label slot="end" class="overflow-visible">{{gasto.monto| currency:'$':'symbol':'1.0-0' }}</ion-label>
+          </ion-item>    
+        </ion-list>
+      </ion-card-content>
+    </ion-card>  
+     
+  <ion-card class="style">
+    <ion-card-header class="style">
+      <ion-card-title class="ion-text-center">Gastos por Categoría</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="chart-container">
+      <app-g-torta></app-g-torta>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="style">
+    <ion-card-header class="style">
+      <ion-card-title class="ion-text-center">Gastos vs. Ahorro Anualizado</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="chart-container">
+      <app-g-barra></app-g-barra>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

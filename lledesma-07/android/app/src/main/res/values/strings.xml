@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Administración de usuarios</string>
+    <string name="title_activity_main">Administración de usuarios</string>
+    <string name="package_name">io.ionic7.starter</string>
+    <string name="custom_url_scheme">io.ionic7.starter</string>
+</resources>

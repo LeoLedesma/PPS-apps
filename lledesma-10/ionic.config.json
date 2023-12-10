@@ -1,0 +1,7 @@
+{
+  "name": "Control de gastos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
